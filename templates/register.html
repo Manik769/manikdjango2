@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+</style>
+<body>
+<div class="a1">
+<form action="" method='post'>
+    {% csrf_token %}
+    firstname:<input type="text" name='fname'>
+    lastname:<input type="text" name='lname'>
+    username:<input type="text" name='username'>
+    email:<input type="text" name='email'>
+    password:<input type="text" name='password'>
+    <button type="submit"> Submit</button>
+    <a href="{% url 'login-page'%}">Login</a>
+</form>
+    </div>
+</body>
+</html>
